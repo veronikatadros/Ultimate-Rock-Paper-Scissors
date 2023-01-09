@@ -1,0 +1,110 @@
+<!-- basic.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <section class="hero is-black has-text-centered">
+    <div class="container">
+      <figure class="image is-128x128">
+        <img class="is-rounded " src="images-1.png" alt="logo">
+      </figure>
+    </div>
+    <div class="title">Rock Paper Scissors</div>
+  </section>
+  <!-- navbar section -->
+  <!-- navigation bar -->
+  <nav class="navbar is-black">
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <!-- pulls to the left -->
+        <a href="index.html" class="navbar-item">Home</a>
+        <a href="basic.html" class="navbar-item has-text-info-dark">Basic</a>
+        <a href="advanced.html" class="navbar-item">Advanced</a>
+        <a href="decision.html" class="navbar-item">Decision Maker</a>
+      </div>
+      <div class="navbar-end">
+      </div>
+    </div>
+  </nav>
+
+  <div class="blackback game">
+    <!--Dice roll animation-->
+    <section class="gamestart">
+      <div class="columns">
+        <div class="column is-3 has-text-centered">
+          <article class="message column box is-black">
+            <div class="message-header needCenter">
+              <p>Scoreboard</p>
+            </div>
+            <div class="message-body needCenter">
+              <div class="score">
+                <div class="playerScore">
+                  <h2 class="is-halfheight">YOU</h2>
+                  <p class="p-count count">0</p>
+                </div>
+              </div>
+              <div class="score">
+                <div class="computerScore">
+                  <h2 class="is-halfheight">COM</h2>
+                  <p class="c-count count">0</p>      
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="column is-5 is-offset-2 needCenter">
+          <div class="content box">
+            <div class="container">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image" id="gif">
+                    <iframe src="https://giphy.com/embed/1n4bBg27elMB9t2wCo" width="220" height="220" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p class="needCenter">Waiting..</p>
+                  </figure>   
+                </div>   
+                <div class="card-content">
+                  <div class="result needCenter"></div>
+                  <br>
+                   <div class="needCenter" id="movesleft">
+                    <span class="tag is-black">Moves Left: 5</span>
+                  </div>
+                  <div class="needCenter">
+                    <button class="button is-dark is-info reload hidden"><strong>Restart?</strong></button>
+                  </div>
+                </div>     
+              </div>
+            </div> 
+            <br>
+            <div class="buttons options needCenter">
+              <button class="button is-info is-light rock">Rock</button>
+              <button class="button is-light is-info paper">Paper</button>
+              <button class="button is-light is-info scissor">Scissors</button>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </section>
+  </div>
+  
+  <footer class="footer is-small has-background-black">
+    <div class="has-text-centered">
+    <p class="subtitle is-5 has-text-white">Any bugs? Let us <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">know.</a></p>
+    <p class="subtitle is-6 has-text-light">Copyright 2022 CAVA<span>&copy;</span></p>
+    </div>
+  </footer>
+    
+  <script src="basic.js"></script>
+</body>
+
+</html>

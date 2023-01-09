@@ -1,0 +1,103 @@
+/* styles.css */
+/* universal selector - Applies to whole document */
+
+.hidden{
+  display: none;
+}
+
+.needCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.needjustcenter{
+  display: flex;
+  justify-content: center;
+}
+
+.blackback{
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.catgif{
+  height: 100%;
+  width: 70%;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.flex-child{
+  flex: 3;
+}
+
+audio{
+  display: hidden;
+}
+/* Score Board */
+.score{
+	display: flex;
+	width: 30vw;
+  text-align: center;
+	justify-content: space-evenly;
+	position: static;
+	top: 70px;
+	z-index: 1;
+}
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2{
+  text-align: left;
+  font-size: 2rem;
+}
+
+h3{
+  text-align: center;
+  font-size: 1rem;
+}
+.centered{
+  justify-content: center;
+}
+
+/* Score */
+.p-count,.c-count{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{
+	.title{
+		text-align: center;
+	}
+	.score{
+		position: absolute;
+		top: 200px;
+		width: 100vw;
+	}
+	.options{
+		width: 100vw;
+	}
+
+
+.center-aligned {
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

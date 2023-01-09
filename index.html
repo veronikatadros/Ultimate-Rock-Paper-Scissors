@@ -1,0 +1,98 @@
+<!-- index.html -->
+<!-- homepage to navigate 3 game options -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+
+
+  <title>Home Page</title>
+</head>
+
+<body>
+  <section class="hero is-black has-text-centered">
+    <div class="container">
+      <figure class="image is-128x128">
+        <img class="is-rounded " src="images-1.png" alt="logo">
+      </figure>
+    </div>
+    <div class="title">Rock Paper Scissors</div>
+  </section>
+  <!-- navbar section -->
+  <!-- navigation bar -->
+  <nav class="navbar is-black">
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <!-- pulls to the left -->
+        <a href="index.html" class="navbar-item has-text-info-dark">Home</a>
+        <a href="basic.html" class="navbar-item">Basic</a>
+        <a href="advanced.html" class="navbar-item">Advanced</a>
+        <a href="decision.html" class="navbar-item">Decision Maker</a>
+      </div>
+      <div class="navbar-end">
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!--section for buttons!!!-->
+  <section class="section">
+    <div class="box">
+      <strong>Welcome to Rock, Paper, Scissors!</strong>
+      <p>
+        We have plenty of ways to play, so feel free to explore our page!
+      </p>
+    </div>
+
+    
+    <!--Options available to player to play game -->
+
+    <div class="columns is-centered is-variable">
+      <article class="message column box is-black">
+        <a href="basic.html">
+          <div class="message-header">
+              <p>Basic</p>
+          </div>
+        </a>  
+        <div class="message-body">
+           Plain old rock paper scissors. You know the rules.
+        </div>
+      </article>
+      
+      <article class="message column box is-black">
+        <a href="advanced.html">
+          <div class="message-header">
+              <p>Advanced</p>
+          </div>
+        </a>  
+        <div class="message-body">
+          Rock, paper, scissors, and a little bit of <span class="has-text-info-dark"><strong>drama.</strong></span>
+        </div>
+      </article>
+
+      <article class="message column box is-black">
+        <a href="decision.html">
+          <div class="message-header">
+              <p>Decision Maker</p>
+          </div>
+        </a>  
+        <div class="message-body">
+          We'll make decisions for you.<br>(We are <strong>NOT</strong> responsible for what happens after).
+        </div>
+      </article>
+    </div>
+
+
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>
